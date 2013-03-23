@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{02F4800D-E45F-3DB5-F8B8-F43002CC1FBC}</ProjectGuid>
+	<ProjectGuid>{C22FA9EE-EBFF-6669-DDA9-C1F27475A5F2}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_0_1;UNITY_4_0;UNITY_STANDALONE_OSX;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_GAMECENTER;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_1;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -49,13 +49,159 @@
      <Compile Include="Assets\Scripts\MouseLook.js" />
      <Compile Include="Assets\Scripts\Playerscript.js" />
      <Compile Include="Assets\Scripts\Spawnscript.js" />
+     <Compile Include="Assets\Scripts\Unity\ImageEffectsOrder.js" />
+     <Compile Include="Assets\Scripts\Unity\ShowFps.js" />
+     <Compile Include="Assets\Scripts\Unity\WaterShaderHelper.js" />
+     <Compile Include="Assets\Scripts\birds\CutsceneBirds.js" />
+     <Compile Include="Assets\Scripts\birds\Seagull.js" />
+     <Compile Include="Assets\Scripts\birds\SeagullFlightPath.js" />
+     <Compile Include="Assets\Scripts\birds\SeagullSoundHeat.js" />
+     <Compile Include="Assets\Scripts\cutscenes\CutsceneManager.js" />
+     <Compile Include="Assets\Scripts\cutscenes\DownChoperCutscene.js" />
+     <Compile Include="Assets\Scripts\cutscenes\ForestCutscene.js" />
+     <Compile Include="Assets\Scripts\cutscenes\ForestCutscenePlayer.js" />
+     <Compile Include="Assets\Scripts\cutscenes\HelicopterCutscene.js" />
+     <Compile Include="Assets\Scripts\cutscenes\StartCutscene.js" />
+     <Compile Include="Assets\Scripts\enemies\dummy\TrainingDummy.js" />
+     <Compile Include="Assets\Scripts\enemies\dummy\TrainingDummyPart.js" />
+     <Compile Include="Assets\Scripts\enemies\dummy\TrainingDummyPartDestructor.js" />
+     <Compile Include="Assets\Scripts\enemies\dummy\TrainingDummyPartHelper.js" />
+     <Compile Include="Assets\Scripts\enemies\turret\Turret.js" />
+     <Compile Include="Assets\Scripts\enemies\turret\TurretPart.js" />
+     <Compile Include="Assets\Scripts\enemies\turret\TurretPiston.js" />
+     <Compile Include="Assets\Scripts\graphics\AssignSkybox.js" />
+     <Compile Include="Assets\Scripts\graphics\CullLayers.js" />
+     <Compile Include="Assets\Scripts\graphics\DistanceDisable.js" />
+     <Compile Include="Assets\Scripts\graphics\ShotLight.js" />
+     <Compile Include="Assets\Scripts\graphics\SimpleRotation.js" />
+     <Compile Include="Assets\Scripts\graphics\SuperWater.js" />
+     <Compile Include="Assets\Scripts\graphics\UVScroller.js" />
+     <Compile Include="Assets\Scripts\huds\Achievment.js" />
+     <Compile Include="Assets\Scripts\huds\AchievmentScreen.js" />
+     <Compile Include="Assets\Scripts\huds\GUIOptimizer.js" />
+     <Compile Include="Assets\Scripts\huds\GameQualitySettings.js" />
+     <Compile Include="Assets\Scripts\huds\HudSpeedometer.js" />
+     <Compile Include="Assets\Scripts\huds\HudWeapons.js" />
+     <Compile Include="Assets\Scripts\huds\MainMenuScreen.js" />
+     <Compile Include="Assets\Scripts\huds\SoldierTarget.js" />
+     <Compile Include="Assets\Scripts\huds\SoundObjectAux.js" />
+     <Compile Include="Assets\Scripts\huds\TrainingStat.js" />
+     <Compile Include="Assets\Scripts\huds\TrainingStatistics.js" />
+     <Compile Include="Assets\Scripts\huds\sarge\SargeInstruction.js" />
+     <Compile Include="Assets\Scripts\huds\sarge\SargeManager.js" />
+     <Compile Include="Assets\Scripts\huds\sarge\SpeakOnTrigger.js" />
+     <Compile Include="Assets\Scripts\misc\AutoDestroy.js" />
+     <Compile Include="Assets\Scripts\misc\AxisVariation.js" />
+     <Compile Include="Assets\Scripts\misc\BlueLeaf.js" />
+     <Compile Include="Assets\Scripts\misc\BlueLeafSound.js" />
+     <Compile Include="Assets\Scripts\misc\DestroyOnHit.js" />
+     <Compile Include="Assets\Scripts\misc\DistanceFade.js" />
+     <Compile Include="Assets\Scripts\misc\DistanceFadeObject.js" />
+     <Compile Include="Assets\Scripts\misc\EaglesEye.js" />
+     <Compile Include="Assets\Scripts\misc\EndGameTrigger.js" />
+     <Compile Include="Assets\Scripts\misc\FadeLight.js" />
+     <Compile Include="Assets\Scripts\misc\FadeOnVisible.js" />
+     <Compile Include="Assets\Scripts\misc\FogAnimationHelper.js" />
+     <Compile Include="Assets\Scripts\misc\FriendlyChopper.js" />
+     <Compile Include="Assets\Scripts\misc\GameManager.js" />
+     <Compile Include="Assets\Scripts\misc\MainMenuEffects.js" />
+     <Compile Include="Assets\Scripts\misc\PauseSound.js" />
+     <Compile Include="Assets\Scripts\misc\SoundObject.js" />
+     <Compile Include="Assets\Scripts\misc\SoundObjectManager.js" />
+     <Compile Include="Assets\Scripts\misc\StartGameTrigger.js" />
+     <Compile Include="Assets\Scripts\misc\SyncAudioListener.js" />
+     <Compile Include="Assets\Scripts\misc\UVScroller_clouds.js" />
+     <Compile Include="Assets\Scripts\misc\UVScroller_simple 1.js" />
+     <Compile Include="Assets\Scripts\misc\UVScroller_simple.js" />
+     <Compile Include="Assets\Scripts\misc\UVScroller_water.js" />
+     <Compile Include="Assets\Scripts\misc\UVScroller_waterfall.js" />
+     <Compile Include="Assets\Scripts\misc\UnderwaterCamera.js" />
+     <Compile Include="Assets\Scripts\misc\streaming\IndustryLoader.js" />
+     <Compile Include="Assets\Scripts\misc\streaming\StreamingController.js" />
+     <Compile Include="Assets\Scripts\soldier\CharacterMotor.js" />
+     <Compile Include="Assets\Scripts\soldier\CharacterPusher.js" />
+     <Compile Include="Assets\Scripts\soldier\CutsceneFoot.js" />
+     <Compile Include="Assets\Scripts\soldier\Footsteps.js" />
+     <Compile Include="Assets\Scripts\soldier\HeadLookController.js" />
+     <Compile Include="Assets\Scripts\soldier\SoldierAnimations.js" />
+     <Compile Include="Assets\Scripts\soldier\SoldierCamera.js" />
+     <Compile Include="Assets\Scripts\soldier\SoldierController.js" />
+     <Compile Include="Assets\Scripts\soldier\SoldierDamageControl.js" />
+     <Compile Include="Assets\Scripts\soldier\WaterInteractions.js" />
+     <Compile Include="Assets\Scripts\weapons\BulletMarkManager.js" />
+     <Compile Include="Assets\Scripts\weapons\BulletMarks.js" />
+     <Compile Include="Assets\Scripts\weapons\Destructable.js" />
+     <Compile Include="Assets\Scripts\weapons\Grenade.js" />
+     <Compile Include="Assets\Scripts\weapons\Gun.js" />
+     <Compile Include="Assets\Scripts\weapons\GunKeyBinder.js" />
+     <Compile Include="Assets\Scripts\weapons\GunManager.js" />
+     <Compile Include="Assets\Scripts\weapons\GunParticles.js" />
+     <Compile Include="Assets\Scripts\weapons\SetChildrenTag.js" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_DepthOfField\SeparableWeightedBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_BloomAndFlares\AddStuff.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\ExtractSkyboxShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\GlowConeTap.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\EdgeApply.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\SunShafts.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_BloomAndFlares\HollywoodFlareBlur.shader" />
+     <None Include="Assets\Pro Standard Assets\Glass Refraction\Particle Add.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\PreDepthOfFieldZRead.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\MotionBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_DepthOfField\CopyDepthToRGBA.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\GlowCompose.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\DepthRGBA8RadialBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Shaders\Particle Alpha Blend.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_DepthOfField\PreDepthOfField.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\SkyboxToRGBADepth.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_BloomAndFlares\AddAlphaHack.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_DepthOfField\RecordCenterDepth.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\RecordCenterDepth.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\SSAOShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\GlowEffectDownsample.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\EdgeBlurApply.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_DepthOfField\PreDepthOfFieldZRead.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_DepthOfField\DofForegroundBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\GrayscaleEffect.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\SepiaToneEffect.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\TwirlEffect.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\VortexEffect.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\EdgeDetectNormalsHQ.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_DepthOfField\SeparableRGBADepthBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_BloomAndFlares\HollywoodFlareStretch.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\ClearExceptSkyboxShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\Image Based\Sources\Shaders\_DepthOfField\DepthOfField.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\EdgeDetectX.shader" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{B360F338-A9C6-5123-0FA0-59B6690DC249}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{EB8AA23C-2655-E22B-2EBB-05697394EDB3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{C42DF910-8195-FA8F-933E-D72811BC6B1D}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{6F4D0F38-84A9-F27A-19D7-9961C098D6DA}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
