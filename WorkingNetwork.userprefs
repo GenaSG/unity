@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Networking/FromScratch/test/Assets/Script/MultiplayerManager.cs">
+    <Files>
+      <File FileName="../Networking/FromScratch/test/Assets/Script/MenuManager.cs" Line="88" Column="26" />
+      <File FileName="../Networking/FromScratch/test/Assets/Script/MultiplayerManager.cs" Line="52" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
